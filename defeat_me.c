@@ -3,18 +3,16 @@
 #include <time.h>
 
 void clearScreen() {
-    system("clear"); // For Unix/Linux
-    //system("cls"); // For Windows
-}
+    system("cls"); 
 
 void printCat() {
-    printf("\033[1;33m"); // Yellow text color
+    printf("\033[1;33m"); 
 
     printf(" /\\_/\\     /\\_/\\\n");
     printf("( o.o )   ( o.o )\n");
     printf(" > ^ <     > ^ <\n");
     
-    printf("\033[0m"); // Reset text color
+    printf("\033[0m"); 
 }
 
 void displayResult(int playerChoice, int computerChoice) {
